@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css">
+        <link rel="stylesheet" href="css/tabla.css" type="text/css">
+        <script src="js/jquery-1.11.2.js"></script>
+        <script src="js/tabla.js"></script>
+        <script src="ajax.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            
+            
+            <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <th>
+                                <input type="text" name="cancion" onkeyup="muestraCanciones(this.value)" class="form-control" placeholder="Busca una canción y te dará recomendaciones de musica">
+                            </th>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Album</th>
+                                    <th>Cancion</th>
+                                    <th>Artista</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cancionesHTML">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+            </div>    
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <th>
+                                SUGERENCIAS
+                            </th>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Album</th>
+                                    <th>Artista</th>
+                                </tr>
+                            </thead>
+                            <tbody id="sugerenciasHTML">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        
+    </body>
+</html>

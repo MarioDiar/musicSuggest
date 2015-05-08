@@ -1,0 +1,30 @@
+.cancionLink:hover {
+    background-color: #bce8f1;
+    cursor: pointer;
+}
+
+.cover {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-size: cover;
+}
+.cover:hover {
+    cursor: pointer;
+}
+.cover.playing {
+    border: 5px solid #bce8f1;
+}
+
+.coverTrack {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-size: cover;
+}
+.coverTrack:hover {
+    cursor: pointer;
+}
+.coverTrack.playing {
+    border: 5px solid #bce8f1;
+}
