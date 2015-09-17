@@ -1,7 +1,8 @@
 <?php
+    //This module grabs the data from the html and utilizes the tastekid API to give recomendation of similar artists    
     if(isset($_GET['artista'])){
         $tastekid_url = 'http://www.tastekid.com/api/similar?q='. urlencode($_GET['artista']) .'&k=134758-MusicCom-ODNHKKMQ&info=1&limit=5';
-        $stringalbumID = "puta madre";
+        $stringalbumID = "";
                
         $tastekid_json = file_get_contents($tastekid_url);
         $artistas_array = json_decode($tastekid_json,true);
